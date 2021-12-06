@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <style>
+            section#output {
+                overflow: auto;
+                height: 900px;
+                width: 600px;
+                padding-top: 10px
+            }
+            button#button {
+                margin: 6px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section id="post">
+                    <h2>Post</h2>
+                    <form>
+                        <label for="name" class="form-label">Name: </label>
+                        <input type="text" id="name" name="name" class="form-control" requred>
+                        <label for="job" class="form-label">Job: </label>
+                        <input type="text" id="job" name="job" class="form-control" requred>
+
+                        <button id="button" type="reset" class="btn btn-secondary">Reset</button>
+                        <button id="button" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </section>
+
+                <section id="register">
+                    <h2>Register</h2>
+                    <form>
+                        <label for="email" class="form-label">Email: </label>
+                        <input type="text" id="email" name="email" class="form-control" requred>
+                        <label for="password" class="form-label">Password: </label>
+                        <input type="text" id="password" name="password" class="form-control" requred>
+
+                        <button id="button" type="reset" class="btn btn-secondary">Reset</button>
+                        <button id="button" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </section>
+
+            </div>
+            <div class="col">
+                
+
+
+                <section id="output" class="col-9">
+
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/FetchAPIExcercise.js"></script>
+</body>
+
+</html>
